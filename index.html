@@ -18,58 +18,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- nguồn Css -->
     <link rel="stylesheet" href="css/web_HC2.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <title> Techex - IT Solutions & Technology WordPress</title>
     
     <!-- nguồn swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
     <!-- Thư viện scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <style>
-    .swiper-button-next, .swiper-rtl .swiper-button-prev {
-        right:25px;
-    }
+       .swiper-button-next, .swiper-button-prev{
+        display: none;
+       }
     .swiper-wrapper {
         width:96%;
     }
-    .swiper-button-prev, .swiper-rtl .swiper-button-next{
-        left:-23px;
+    @media screen and (max-width:701px) {
+        .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+            bottom:23%;
+        }
     }
+    @media screen and (max-width:450px) {
+        .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+            bottom:23%;
+        }
+
+    }
+    
     </style>
 </head>
 <body>
     <header id="header">
-        <div class="imgs">
-            <div class="img1">
-
-            </div>
-            <div class="img2">
-
-            </div>
-            <div class="img3">
-
-            </div>
-        </div>
         <div class="container">
-            <div class="navbar">
-                <div class="logo">
+            <div class="header_navbar">
+                <div class="header_logo">
                     <a href="#"><img src="https://rrdevs.net/demos/wp/techex/wp-content/uploads/2022/01/logo-black.svg" alt="" width="150px"></a>
                 </div>
                 <input type="checkbox" class='nav__input' name="" id="nav__input">
                 <label for="nav__input" class="nav__overlay"></label>
-                <div class="menu">
-                    <ul>
+                    <ul class="header_nav_menu">
                         <li><a href="#">Demos  <i class="fa fa-angle-down"></i></a>
-                            <ul class="sub2">
+                            <ul class="menu_sub2">
                                 <li><a href="#">Display</a></li>
                                 <li><a href="#">Design</a></li>
                                 <li><a href="#">Decor</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Pages  <i class="fa fa-angle-down"></i></a>
-                            <ul class="sub2">
+                            <ul class="menu_sub2">
                                 <li><a href="#">About</a></li>
                                 <li><a href="#">Case Study</a></li>
                                 <li><a href="#">Services</a></li>
@@ -77,7 +77,7 @@
                             </ul>
                         </li>
                         <li><a href="#">Blog  <i class="fa fa-angle-down"></i></a>
-                            <ul class="sub2">
+                            <ul class="menu_sub2">
                                 <li><a href="#">Blog</a></li>
                                 <li><a href="#">Blog Details</a></li>
                                 
@@ -85,7 +85,6 @@
                         </li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                </div>
                 <div class="menu_mobile">
                     <label for="nav__input" class="icon2">
                         <i class="fa-solid fa-xmark"></i>
@@ -117,137 +116,154 @@
                     </ul>
                     
                 </div>
-                <label for="nav__input" class="icon">
-                    <i class="fa-solid fa-bars"></i>
-                </label>
-                <div class="box">
-                    <a href="#">CONSULTANCY <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                
+                <div class="header_box">
+                    <label for="nav__input" class="header_navbar_icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <a class="header_nav_text" href="#">CONSULTANCY <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div> 
         </div>
-        <div class="content">
-            <p class="p1">
-                Solutions For
-            </p>
-            <p class="p2">
-                IT Business
-            </p>
-            <p class="p3">
-                We Have 25 Years Of Experience In IT Solutions
-            </p>
-        </div>
-        <div class="link">
-            <ul>
-                <li class="link1"><a href="#"> SERVICE WE PROVIDE <i class="fa fa-arrow-right" aria-hidden="true"></i> </a></li>
-                <li class="link2"> <a href="#"> LEARN MORE <i class="fa fa-arrow-right" aria-hidden="true"></i> </a></li>
-            </ul>
-        </div>
     </header>
     <main id="main">
-        <section class="part1" data-aos="zoom-in">
-            <div class="title">
-                <p class="p1">
+        <section class="banner">
+            <div class="banner_imgs">
+                <div class="banner_img1">
+    
+                </div>
+                <div class="banner_img2">
+    
+                </div>
+                <div class="banner_img3">
+    
+                </div>
+            </div>
+            <div class="banner_content">
+                <div class="banner_content_text">
+                    <p class="banner_content_p1">
+                        Solutions For
+                    </p>
+                    <p class="banner_content_p2">
+                        IT Business
+                    </p>
+                    <p class="banner_content_p3">
+                        We Have 25 Years Of Experience In IT Solutions
+                    </p>
+                   
+                </div>
+                <div class="banner_content_link">
+                    <ul>
+                        <li class="banner_content_link1"><a href="#"> SERVICE WE PROVIDE <i class="fa fa-arrow-right" aria-hidden="true"></i> </a></li>
+                        <li class="banner_content_link2"> <a href="#"> LEARN MORE <i class="fa fa-arrow-right" aria-hidden="true"></i> </a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </section>
+        <section class="services" data-aos="zoom-in">
+            <div class="sevices_title">
+                <p class="sevices_title_p1">
                     HOW CAN HELP YOU
                 </p>
-                <p class="p2">
+                <p class="sevices_title_p2">
                     We Help Your IT Business
                 </p>
 
             </div>
-            <div class="content">
-                <div class="left">
-                    <div class="img">
-                        
+            <div class="services_content">
+                <div class="services_content_left">
+                    <div class="services_content_img">
                     </div>
                 </div>
-                <div class="right">
-                    <div class="top">
-                        <div class="boxmain">
+                <div class="services_content_right">
+                    <div class="services_content_right_main">
+                        <div class="services_content_right_main_boxmain">
                             <div class="box">
-                                <div class="left2">
+                                <div class="icon">
                                     <i class="fa fa-globe"></i>
                                 </div>
-                                <div class="right2">
+                                <div class="text">
                                     <p class="p1">IT Consultancy</p>
                                     <p class="p2">Faster & Smarter Solutions</p>
                                 </div>
                             </div>
                             <div class="box">
-                                <div class="left2">
+                                <div class="icon">
                                     <i class="fa fa-atom"></i>
                                 </div>
-                                <div class="right2">
+                                <div class="text">
                                     <p class="p1">UX/UI Strategy</p>
                                     <p class="p2">Faster & Smarter Solutions</p>
                                 </div>
                             </div>
                             <div class="box">
-                                <div class="left2">
+                                <div class="icon">
                                    <i class="fa fa-shield    "></i>
                                 </div>
-                                <div class="right2">
+                                <div class="text">
                                     <p class="p1">Cyber Security</p>
                                     <p class="p2">Faster & Smarter Solutions</p>
                                 </div>
                             </div>
                             <div class="box">
-                                <div class="left2">
+                                <div class="icon">
                                     <i class="fa fa-cloud-download" aria-hidden="true"></i>
                                 </div>
-                                <div class="right2">
+                                <div class="text">
                                     <p class="p1">Development</p>
                                     <p class="p2">Faster & Smarter Solutions</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="bottom">
+                    <div class="services_content_right_main_paragraph">
                        <p> Sed perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque quae</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000" class="part2">
-            <div class="box">
-                <div class="left3">
-                    <div class="container">
+        <section data-aos="zoom-in" class="about">
+            <div class="about_container">
+                <div class="about_container_box">
+                    <div class="about_container_box_text">
                     <div class="top">
                             <h3>ABOUT COMPANY</h3>
-                            <p class="h1">Get’s IT Solutions For Expert Consultants</p>
-                            <p>Sed ut perspiciatis unde omnis natus error sit voluptatem <br>
+                            <p class="top_p1">Get’s IT Solutions For Expert Consultants</p>
+                            <p class="top_p2">Sed ut perspiciatis unde omnis natus error sit voluptatem <br>
                             accusa ntium doloremque laudantium totam rem aperiamea<br>
                             queipsa quae abillo inventore veritatis et quasi architecto <br>
                             beatae vitae dicta sunt explicabo.</p>
                     </div>
                     <div class="bottom">
-                            <div class="icon">
-                                <i class="fa-solid fa-people-group"></i>
+                            <div class="bottom_icon">
+                                <i class="fa fa-people-group"></i>
                             </div>
-                            <div class="content">
+                            <div class="bottom_content">
                                 <h2>Professional Consultants</h2>
                                 <p>Quis autem vel eum iure reprehenderit quin voluptate velit esse quam</p>
                             </div>
                     </div>
                     </div>
                 </div>
-                <div class="right3">
-                    <div class="img">
+                <div class="about_container_img">
+                    <div class="img_main">
                         
                     </div>
                 </div>
             </div>
         </section>
-        <section class="part3">
-            <div class="title">
-                <p class="p1">POPULAR IT SERVICES</p>
-                <p  class="p2">Our Professional Solutions<br> For IT Business</p>
+        <section class="popular">
+            <div class="popular_title">
+                <p class="popular_title_p1">POPULAR IT SERVICES</p>
+                <p  class="popular_title_p2">Our Professional Solutions<br> For IT Business</p>
             </div>
-            <div class="content">
+            <div class="popular_content">
                 <div class="box">
-                    <img src="https://rrdevs.net/demos/wp/techex/wp-content/uploads/2021/10/sicon4.png" alt="">
-                    <div class="infor">
+                    <div class="img_main2">
+                        <img src="https://rrdevs.net/demos/wp/techex/wp-content/uploads/2021/10/sicon4.png" alt="">
+                    </div>
+                    <div class="box_infor">
                         <h3>Digital Solutions</h3>
                         <p>Quis autem vel eum iure<br> reprehenderit qui in ea</p>
                         <a href="#">LEARN MORE <i class="fa-solid fa-arrow-right"></i></a>
@@ -255,8 +271,10 @@
                 </div>
 
                 <div class="box">
-                    <img src="https://rrdevs.net/demos/wp/techex/wp-content/uploads/2021/10/sicon3.png" alt="">
-                    <div class="infor">
+                    <div class="img_main2">                       
+                        <img src="https://rrdevs.net/demos/wp/techex/wp-content/uploads/2021/10/sicon3.png" alt="">
+                    </div>
+                    <div class="box_infor">
                         <h3>Web Development</h3>
                         <p>Quis autem vel eum iure<br> reprehenderit qui in ea</p>
                         <a href="#">LEARN MORE <i class="fa-solid fa-arrow-right"></i></a>
@@ -264,17 +282,20 @@
                 </div>
 
                 <div class="box">
-                    <img src="https://rrdevs.net/demos/wp/techex/wp-content/uploads/2021/10/sicon1.png" alt="">
-                    <div class="infor">
+                    <div class="img_main2">
+                        <img src="https://rrdevs.net/demos/wp/techex/wp-content/uploads/2021/10/sicon1.png" alt="">
+                    </div>
+                    <div class="box_infor">
                         <h3>Manage IT Services</h3>
                         <p>Quis autem vel eum iure<br> reprehenderit qui in ea</p>
                         <a href="#">LEARN MORE <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
-
                 <div class="box">
-                    <img src="https://rrdevs.net/demos/wp/techex/wp-content/uploads/2021/10/sicon2.png" alt="">
-                    <div class="infor">
+                    <div class="img_main2">
+                        <img src="https://rrdevs.net/demos/wp/techex/wp-content/uploads/2021/10/sicon2.png" alt="">
+                    </div>
+                    <div class="box_infor">
                         <h3>Product Engineering</h3>
                         <p>Quis autem vel eum iure<br> reprehenderit qui in ea</p>
                         <a href="#">LEARN MORE <i class="fa-solid fa-arrow-right"></i></a>
@@ -282,10 +303,10 @@
                 </div>
             </div>
         </section>
-        <section data-aos="fade-right" class="part4">
-            <div class="container">
-                <div class="text">
-                    <div class="box1">
+        <section data-aos="zoom-in" class="members">
+            <div class="members_container">
+                <div class="members_title">
+                    <div class="members_title_text">
                         <p class="p1">
                             EXCLUSIVE MEMBERS
                         </p>
@@ -293,104 +314,110 @@
                             Meet Our Experience Team<br> Members
                         </p>
                     </div>
-                    <div class="box2">
+                    <div class="members_title_button">
                         <a href="#">VIEW ALL MEMBERS  <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="content">
-                    <div class="box">
-                        <img src="https://techex.windstripethemes.com/images/team/team1.jpg" alt=""width="210px">
-                        <div class="infor">
+                <div class="members_container_main">
+                    <div class="members_container_main_box">
+                        <div class="img_main">
+                            <img src="https://techex.windstripethemes.com/images/team/team1.jpg" alt=""width="210px">
+                        </div>
+                        <div class="members_container_main_box_infor">
                             <p class="p1">
                                 Pongta Choduri
                             </p>
                             <p class="p2">
                                 UI/UX Engineer
                             </p>
-                            <div class="icons">
+                            <div class="members_container_main_box_icons">
                                 <a href="#"><i class="fa fa-youtube"></i></a>
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-instagram"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
                             </div>
                         </div>
-                        <div class="shape">
+                        <div class="members_container_main_box_shape">
 
                         </div>
                     </div>
 
-                    <div class="box">
-                        <img class="img1" src="https://techex.windstripethemes.com/images/team/team2.jpg" alt="" width="210px" height="210px">
-                        <div class="infor">
+                    <div class="members_container_main_box">
+                        <div class="img_main">
+                            <img src="https://techex.windstripethemes.com/images/team/team2.jpg" alt="" width="210px" height="210px">
+                        </div>
+                        <div class="members_container_main_box_infor">
                             <p class="p1">
                                 Joy Ponna
                             </p>
                             <p class="p2">
                                 Business Manager
                             </p>
-                            <div class="icons">
+                            <div class="members_container_main_box_icons">
                                 <a href="#"><i class="fa fa-youtube"></i></a>
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-instagram"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
                             </div>
                         </div>
-                        <div class="shape">
+                        <div class="members_container_main_box_shape">
                             
                         </div>
                     </div>
 
-                    <div class="box">
-                        <img src="https://techex.windstripethemes.com/images/team/team3.jpg" alt=""width="210px">
-                        <div class="infor">
+                    <div class="members_container_main_box">
+                        <div class="img_main">
+                            <img src="https://techex.windstripethemes.com/images/team/team3.jpg" alt=""width="210px">
+                        </div>
+                        <div class="members_container_main_box_infor">
                             <p class="p1">
                                 Rahul L. Branch
                             </p>
                             <p class="p2">
                                 Graphic Designer
                             </p>
-                            <div class="icons">
+                            <div class="members_container_main_box_icons">
                                 <a href="#"><i class="fa fa-youtube"></i></a>
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-instagram"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
                             </div>
                         </div>
-                        <div class="shape">
+                        <div class="members_container_main_box_shape">
                             
                         </div>
                     </div>
 
-                    <div class="box">
-                        <img src="https://techex.windstripethemes.com/images/team/team4.jpg" alt=""width="210px">
-                        <div class="infor">
+                    <div class="members_container_main_box">
+                        <div class="img_main">
+                            <img src="https://techex.windstripethemes.com/images/team/team4.jpg" alt=""width="210px">
+                        </div>
+                        <div class="members_container_main_box_infor">
                             <p class="p1">
                                 Akash Ahamed
                             </p>
                             <p class="p2">
                                 WordPress Deveoper
                             </p>
-                            <div class="icons">
+                            <div class="members_container_main_box_icons">
                                 <a href="#"><i class="fa fa-youtube"></i></a>
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-instagram"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
                             </div>
                         </div>
-                        <div class="shape">
+                        <div class="members_container_main_box_shape">
                             
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000" class="part5">
-            <div class="left">
+        <section class="silde">
+            <div class="silde_PSD">
                 <img src="https://rrdevs.net/demos/wp/techex/wp-content/uploads/2021/11/testi_bg.jpg" alt="">
             </div>
-            <div class="right">
+            <div class="silde_silde">
                 <div class="box">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
@@ -411,41 +438,41 @@
                 </div>
             </div>
         </section>
-        <section class="part6">
-            <div class="title">
-                <p class="p1">
+        <section class="help">
+            <div class="help_title">
+                <p class="help_title_p1">
                     LATEST NEWS & BLOG
                 </p>
-                <p class="p2">Get Every Single Updates</p>
+                <p class="help_title_p2">Get Every Single Updates</p>
             </div>
-            <div class="content">
-                <div class="box">
-                    <div class="box1">
+            <div class="help_main">
+                <div class="help_main_box">
+                    <div class="box_main_img">
                         <img src="https://rrdevs.net/demos/wp/techex/wp-content/uploads/2021/11/blog-01-2048x1366.jpg" alt="">
                     </div>
-                    <div class="infor">
+                    <div class="box_main_infor">
                         <p class="p3"><i aria-hidden="true" class="far fa-calendar-alt"></i> November 21, 2021</p>
                         <p class="p4">Beyond Tools How Building A <br> Design System...</p>
                         <a href="#">READ MODE <i class="fa-solid fa-arrow-right"></i> </a>
                     </div>
                 </div>
 
-                <div class="box">
-                    <div class="box1">
+                <div class="help_main_box">
+                    <div class="box_main_img">
                         <img src="https://rrdevs.net/demos/wp/techex/wp-content/uploads/2021/11/blog-02-2048x1366.jpg" alt="">
                     </div>
-                    <div class="infor">
+                    <div class="box_main_infor">
                         <p class="p3"><i aria-hidden="true" class="far fa-calendar-alt"></i> November 21, 2021</p>
                         <p class="p4">Make Honest Design Work As <br>For Digital...</p>
                         <a href="#">READ MODE <i class="fa-solid fa-arrow-right"></i> </a>
                     </div>
                 </div>
 
-                <div class="box">
-                    <div class="box1">
+                <div class="help_main_box">
+                    <div class="box_main_img">
                         <img src="https://rrdevs.net/demos/wp/techex/wp-content/uploads/2021/11/case-01-2048x1366.jpg" alt="">
                     </div>
-                    <div class="infor">
+                    <div class="box_main_infor">
                         <p class="p3"><i aria-hidden="true" class="far fa-calendar-alt"></i> November 21, 2021</p>
                         <p class="p4">Beyond Tools How Building A <br> Design System...</p>
                         <a href="#">READ MODE <i class="fa-solid fa-arrow-right"></i> </a>
@@ -455,26 +482,27 @@
         </section>
     </main>
     <footer id="footer">
-        <div class="top">
-            <div class="text">
-                Ready To Get Free Consulations<br>For Any Kind Of It Solutions ?
-
-            </div>
-            <div class="link">
-                <a href="#"> GET A QUOTE <i class="fa-solid fa-arrow-right"></i>  </a>
-                <a class="a1" href="#"> READ MORE <i class="fa-solid fa-arrow-right"></i> </a>
+        <div class="footer_box">
+            <div class="footer_box_main">
+                <div class="footer_box_text">
+                    Ready To Get Free Consulations For Any Kind Of It Solutions ?
+                </div>
+                <div class="footer_box_link">
+                    <a class="a1" href="#"> GET A QUOTE <i class="fa-solid fa-arrow-right"></i>  </a>
+                    <a class="a2" href="#"> READ MORE <i class="fa-solid fa-arrow-right"></i> </a>
+                </div>
             </div>
         </div>
-        <div class="bottom">
-            <div class="left">
+        <div class="footer_contact">
+            <div class="footer_contact_infor">
                 <img src="https://rrdevs.net/demos/wp/techex/wp-content/uploads/2022/01/logo-black.svg" alt="" width="150px">
-                <p>Sed ut perspiciatis unde omnis <br>natus voluptatem accusa ntiumy <br>doloremque laudantium.</p>
-                <div class="contain">
+                <p>Sed ut perspiciatis unde omnis natus voluptatem accusa ntiumy doloremque laudantium.</p>
+                <div class="footer_contact_infor_email">
                     <input type="email" placeholder="Enter your email">
                     <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="right">
+            <div class="footer_contact_serviecs">
                 <div class="box">
                     <h4>
                         PRODUCTS
@@ -528,7 +556,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="finish">
+            <div class="footer_finish">
                 <p class="p1" >
                     © 2022 RR Devs . COPY BY VU VAN AN
                 </p>
